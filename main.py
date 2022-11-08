@@ -44,8 +44,11 @@ class CommentDeleter:
 
     def delete_comments(self, ids, client):
         for id in ids:
-            request = client.comments().delete(id=id)
-            request.execute()
+            try:
+                request = client.comments().delete(id=id)
+                request.execute()
+            except Exception as e:
+                print(e)
 
 
 if __name__ == "__main__":
