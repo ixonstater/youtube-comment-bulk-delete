@@ -23,7 +23,7 @@ class CommentDeleter:
         pass
 
     def delete(self):
-        with open(self.commentDir, "r") as comments_file:
+        with open(self.commentDir, "r", encoding="utf8") as comments_file:
             contents = comments_file.read()
             commentReplyIds = re.findall(self.commentReplyRegex, contents)
             commentIds = re.findall(self.commentRegex, contents)
