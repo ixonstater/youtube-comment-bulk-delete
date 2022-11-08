@@ -11,6 +11,7 @@ You need two things for this to work:
     * You will need to create a project, but you can use an account other than the one you wish to delete comments from if you wish.
     * You will need to configure an OAuth consent screen, just filling in the required stuff should be fine.
     * You will need to add yourself and anyone else that will be using this app as test users.
+    * Once you have finished creating the OAuth client config, dowload the secret file, name it `creds.json` and place it in the top directory of the repo.
     * Once the OAuth client config is done enable the [Youtube Data API V3](https://console.cloud.google.com/apis/library/youtube.googleapis.com).
 
 ## Running
